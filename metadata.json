@@ -1,0 +1,15 @@
+{
+  "model": "EfficientNetB0 (ImageNet pretrained) + custom head",
+  "val_accuracy": 0.8823333382606506,
+  "val_loss": 0.3616417944431305,
+  "num_classes": 30,
+  "img_size": [
+    224,
+    224
+  ],
+  "training_phases": [
+    "Phase 1: base frozen, 6 epochs, LR=1e-3 \u2192 ~82%",
+    "Phase 2: unfreeze top 20, LR=1e-5 \u2192 ~87%",
+    "Phase 3: unfreeze top 40, LR=5e-6 \u2192 ~87.2%"
+  ]
+}

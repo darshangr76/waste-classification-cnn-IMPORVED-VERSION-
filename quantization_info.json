@@ -1,0 +1,20 @@
+{
+  "keras_original": {
+    "path": "final_model.keras",
+    "size_mb": 28.26,
+    "val_accuracy": 0.8723
+  },
+  "tflite_float16": {
+    "path": "model_float16.tflite",
+    "size_mb": 8.16,
+    "val_accuracy_subset": 0.8625,
+    "accuracy_drop": 0.0098
+  },
+  "tflite_int8_dynamic": {
+    "path": "model_quantized.tflite",
+    "size_mb": 4.58,
+    "val_accuracy_subset": 0.8562,
+    "accuracy_drop": 0.0161
+  },
+  "recommendation": "tflite_float16 for balanced mobile deployment, keras for server inference"
+}
